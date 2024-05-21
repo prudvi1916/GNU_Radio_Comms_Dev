@@ -1,0 +1,750 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: sssssss
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Not titled yet
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: fc
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '100000000'
+    step: '1000000'
+    stop: '109400000'
+    value: '109400000'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [424, 32.0]
+    rotation: 0
+    state: enabled
+- name: fm
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '10000'
+    step: '1500'
+    stop: '95000'
+    value: '95000'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [584, 24.0]
+    rotation: 0
+    state: enabled
+- name: mi
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: int
+    start: '-2'
+    step: '1'
+    stop: '10'
+    value: '10'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [704, 24.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '1080000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 12]
+    rotation: 0
+    state: enabled
+- name: analog_fm_demod_cf_0
+  id: analog_fm_demod_cf
+  parameters:
+    affinity: ''
+    alias: ''
+    audio_decim: '4'
+    audio_pass: '15000'
+    audio_stop: '50000'
+    chan_rate: '384000'
+    comment: ''
+    deviation: '95000'
+    gain: '1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tau: 75e-6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [728, 412.0]
+    rotation: 180
+    state: enabled
+- name: analog_phase_modulator_fc_0
+  id: analog_phase_modulator_fc
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    sensitivity: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [576.0, 192]
+    rotation: 270
+    state: enabled
+- name: analog_sig_source_x_0
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '0.5'
+    comment: ''
+    freq: fm
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: samp_rate
+    showports: 'False'
+    type: float
+    waveform: analog.GR_SIN_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 112.0]
+    rotation: 0
+    state: enabled
+- name: analog_sig_source_x_1
+  id: analog_sig_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    amp: '1'
+    comment: ''
+    freq: fc
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    phase: '0'
+    samp_rate: samp_rate
+    showports: 'False'
+    type: complex
+    waveform: analog.GR_COS_WAVE
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 256.0]
+    rotation: 0
+    state: enabled
+- name: audio_sink_0
+  id: audio_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    device_name: ''
+    num_inputs: '1'
+    ok_to_block: 'True'
+    samp_rate: samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [480, 560.0]
+    rotation: 0
+    state: enabled
+- name: blocks_complex_to_real_0
+  id: blocks_complex_to_real
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 344.0]
+    rotation: 0
+    state: enabled
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [936, 456.0]
+    rotation: 180
+    state: enabled
+- name: blocks_multiply_const_vxx_1
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: mi
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [240, 152.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_xx_0
+  id: blocks_multiply_xx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    num_inputs: '2'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 376.0]
+    rotation: 0
+    state: enabled
+- name: blocks_throttle2_0
+  id: blocks_throttle2
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    limit: auto
+    maximum: '0.1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [408, 152.0]
+    rotation: 0
+    state: enabled
+- name: blocks_throttle2_1
+  id: blocks_throttle2
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    limit: auto
+    maximum: '0.1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [120, 584.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_1
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self, sample_rate=1.08e6,lof=1055e3):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='mixer_lo',   # will show up in GRC\n          \
+      \  in_sig=[np.float32],\n            out_sig=[np.float32]\n        )\n     \
+      \   # if an attribute with the same name as a parameter is found,\n        #\
+      \ a callback is registered (properties work, too).\n        self.lof= lof\n\
+      \        self.sample_rate = sample_rate\n        self.ry =0.0\n\n    def work(self,\
+      \ input_items, output_items):\n        \"\"\"example: multiply with constant\"\
+      \"\"\n        input_signal = input_items[0]\n        time = np.arange(len(input_signal))\n\
+      \        lo_signal = np.cos(2*np.pi*self.lof*time/self.sample_rate)\n      \
+      \  output_items[0][:] = input_signal * lo_signal\n        return len(output_items[0])\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    lof: '1055000.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    sample_rate: '1080000.0'
+  states:
+    _io_cache: ('mixer_lo', 'blk', [('sample_rate', '1080000.0'), ('lof', '1055000.0')],
+      [('0', 'float', 1)], [('0', 'float', 1)], 'Embedded Python Block example - a
+      simple multiply const', ['lof', 'sample_rate'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1080, 264.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_2
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self,gain=1.0):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='if amplifier',   # will show up in GRC\n      \
+      \      in_sig=[np.float32],\n            out_sig=[np.float32]\n        )\n \
+      \       # if an attribute with the same name as a parameter is found,\n    \
+      \    # a callback is registered (properties work, too).\n        self.gain=\
+      \ gain\n        self.ry = 0.0\n\n    def work(self, input_items, output_items):\n\
+      \        \"\"\"example: multiply with constant\"\"\"\n        output_items[0][:]\
+      \ = input_items[0] * self.gain\n        return len(output_items[0])\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    gain: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('if amplifier', 'blk', [('gain', '1.0')], [('0', 'float', 1)], [('0',
+      'float', 1)], 'Embedded Python Block example - a simple multiply const', ['gain'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1384.0, 296]
+    rotation: 270
+    state: enabled
+- name: epy_block_2_0
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self,threshold=1.0):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='limiter',   # will show up in GRC\n           \
+      \ in_sig=[np.float32],\n            out_sig=[np.float32]\n        )\n      \
+      \  # if an attribute with the same name as a parameter is found,\n        #\
+      \ a callback is registered (properties work, too).\n        self.threshold=\
+      \ threshold\n        self.ry =0.0\n\n    def work(self, input_items, output_items):\n\
+      \        \"\"\"example: multiply with constant\"\"\"\n        input_signal =\
+      \ input_items[0]\n        output_signal = np.clip(input_signal,-self.threshold,self.threshold)\n\
+      \        output_items[0][:] = output_signal\n        return len(output_items[0])\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    threshold: '1.0'
+  states:
+    _io_cache: ('limiter', 'blk', [('threshold', '1.0')], [('0', 'float', 1)], [('0',
+      'float', 1)], 'Embedded Python Block example - a simple multiply const', ['threshold'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1304, 480.0]
+    rotation: 180
+    state: enabled
+- name: epy_block_2_1
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self,gain=1.0):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='rf amplifier',   # will show up in GRC\n      \
+      \      in_sig=[np.float32],\n            out_sig=[np.float32]\n        )\n \
+      \       # if an attribute with the same name as a parameter is found,\n    \
+      \    # a callback is registered (properties work, too).\n        self.gain=\
+      \ gain\n        self.ry = 0.0\n\n    def work(self, input_items, output_items):\n\
+      \        \"\"\"example: multiply with constant\"\"\"\n        output_items[0][:]\
+      \ = input_items[0] * self.gain\n        return len(output_items[0])\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    gain: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('rf amplifier', 'blk', [('gain', '1.0')], [('0', 'float', 1)], [('0',
+      'float', 1)], 'Embedded Python Block example - a simple multiply const', ['gain'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [880, 312.0]
+    rotation: 0
+    state: enabled
+- name: epy_block_5
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self, gain=1.0):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='af amplifier',   # will show up in GRC\n      \
+      \      in_sig=[np.float32],\n            out_sig=[np.float32]\n        )\n \
+      \       # if an attribute with the same name as a parameter is found,\n    \
+      \    # a callback is registered (properties work, too).\n        self.gain =\
+      \ gain\n        self.ry =0\n\n    def work(self, input_items, output_items):\n\
+      \        \"\"\"example: multiply with constant\"\"\"\n        output_items[0][:]\
+      \ = input_items[0] * self.gain\n        return len(output_items[0])\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    gain: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('af amplifier', 'blk', [('gain', '1.0')], [('0', 'float', 1)], [('0',
+      'float', 1)], 'Embedded Python Block example - a simple multiply const', ['gain'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [360, 464.0]
+    rotation: 180
+    state: enabled
+- name: epy_block_5_0
+  id: epy_block
+  parameters:
+    _source_code: "\"\"\"\nEmbedded Python Blocks:\n\nEach time this file is saved,\
+      \ GRC will instantiate the first class it finds\nto get ports and parameters\
+      \ of your block. The arguments to __init__  will\nbe the parameters. All of\
+      \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
+      from gnuradio import gr\n\n\nclass blk(gr.sync_block):  # other base classes\
+      \ are basic_block, decim_block, interp_block\n    \"\"\"Embedded Python Block\
+      \ example - a simple multiply const\"\"\"\n\n    def __init__(self, gain=1.0):\
+      \  # only default arguments here\n        \"\"\"arguments to this function show\
+      \ up as parameters in GRC\"\"\"\n        gr.sync_block.__init__(\n         \
+      \   self,\n            name='power amplifier',   # will show up in GRC\n   \
+      \         in_sig=[np.float32],\n            out_sig=[np.float32]\n        )\n\
+      \        # if an attribute with the same name as a parameter is found,\n   \
+      \     # a callback is registered (properties work, too).\n        self.gain\
+      \ = gain\n        self.ry =0\n\n    def work(self, input_items, output_items):\n\
+      \        \"\"\"example: multiply with constant\"\"\"\n        output_items[0][:]\
+      \ = input_items[0] * self.gain\n        return len(output_items[0])\n"
+    affinity: ''
+    alias: ''
+    comment: ''
+    gain: '1.0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+  states:
+    _io_cache: ('power amplifier', 'blk', [('gain', '1.0')], [('0', 'float', 1)],
+      [('0', 'float', 1)], 'Embedded Python Block example - a simple multiply const',
+      ['gain'])
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [136, 464.0]
+    rotation: 180
+    state: enabled
+- name: qtgui_time_sink_x_0
+  id: qtgui_time_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: blue
+    color10: dark blue
+    color2: red
+    color3: green
+    color4: black
+    color5: cyan
+    color6: magenta
+    color7: yellow
+    color8: dark red
+    color9: dark green
+    comment: ''
+    ctrlpanel: 'False'
+    entags: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label1: Signal 1
+    label10: Signal 10
+    label2: Signal 2
+    label3: Signal 3
+    label4: Signal 4
+    label5: Signal 5
+    label6: Signal 6
+    label7: Signal 7
+    label8: Signal 8
+    label9: Signal 9
+    legend: 'True'
+    marker1: '-1'
+    marker10: '-1'
+    marker2: '-1'
+    marker3: '-1'
+    marker4: '-1'
+    marker5: '-1'
+    marker6: '-1'
+    marker7: '-1'
+    marker8: '-1'
+    marker9: '-1'
+    name: '""'
+    nconnections: '1'
+    size: '1024'
+    srate: samp_rate
+    stemplot: 'False'
+    style1: '1'
+    style10: '1'
+    style2: '1'
+    style3: '1'
+    style4: '1'
+    style5: '1'
+    style6: '1'
+    style7: '1'
+    style8: '1'
+    style9: '1'
+    tr_chan: '0'
+    tr_delay: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: float
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    ylabel: Amplitude
+    ymax: '1'
+    ymin: '-1'
+    yunit: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [864, 88.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_time_sink_x_0_0
+  id: qtgui_time_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: blue
+    color10: dark blue
+    color2: red
+    color3: green
+    color4: black
+    color5: cyan
+    color6: magenta
+    color7: yellow
+    color8: dark red
+    color9: dark green
+    comment: ''
+    ctrlpanel: 'False'
+    entags: 'True'
+    grid: 'False'
+    gui_hint: ''
+    label1: Signal 1
+    label10: Signal 10
+    label2: Signal 2
+    label3: Signal 3
+    label4: Signal 4
+    label5: Signal 5
+    label6: Signal 6
+    label7: Signal 7
+    label8: Signal 8
+    label9: Signal 9
+    legend: 'True'
+    marker1: '-1'
+    marker10: '-1'
+    marker2: '-1'
+    marker3: '-1'
+    marker4: '-1'
+    marker5: '-1'
+    marker6: '-1'
+    marker7: '-1'
+    marker8: '-1'
+    marker9: '-1'
+    name: '""'
+    nconnections: '1'
+    size: '1024'
+    srate: samp_rate
+    stemplot: 'False'
+    style1: '1'
+    style10: '1'
+    style2: '1'
+    style3: '1'
+    style4: '1'
+    style5: '1'
+    style6: '1'
+    style7: '1'
+    style8: '1'
+    style9: '1'
+    tr_chan: '0'
+    tr_delay: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: float
+    update_time: '0.5'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    ylabel: Amplitude
+    ymax: '1'
+    ymin: '-1'
+    yunit: '""'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 624.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [analog_fm_demod_cf_0, '0', epy_block_5, '0']
+- [analog_phase_modulator_fc_0, '0', blocks_multiply_xx_0, '0']
+- [analog_sig_source_x_0, '0', blocks_multiply_const_vxx_1, '0']
+- [analog_sig_source_x_1, '0', blocks_multiply_xx_0, '1']
+- [blocks_complex_to_real_0, '0', epy_block_2_1, '0']
+- [blocks_complex_to_real_0, '0', qtgui_time_sink_x_0, '0']
+- [blocks_float_to_complex_0, '0', analog_fm_demod_cf_0, '0']
+- [blocks_multiply_const_vxx_1, '0', blocks_throttle2_0, '0']
+- [blocks_multiply_xx_0, '0', blocks_complex_to_real_0, '0']
+- [blocks_throttle2_0, '0', analog_phase_modulator_fc_0, '0']
+- [blocks_throttle2_1, '0', audio_sink_0, '0']
+- [blocks_throttle2_1, '0', qtgui_time_sink_x_0_0, '0']
+- [epy_block_1, '0', epy_block_2, '0']
+- [epy_block_2, '0', epy_block_2_0, '0']
+- [epy_block_2_0, '0', blocks_float_to_complex_0, '0']
+- [epy_block_2_0, '0', blocks_float_to_complex_0, '1']
+- [epy_block_2_1, '0', epy_block_1, '0']
+- [epy_block_5, '0', epy_block_5_0, '0']
+- [epy_block_5_0, '0', blocks_throttle2_1, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.9.2
