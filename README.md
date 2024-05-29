@@ -35,11 +35,15 @@ This repository includes various scripts, configuration files, and documentation
 
 To get started with this project, please follow these steps:
 
-1. **Install Oracle VM VirtualBox**: Ensure you have VirtualBox installed on your machine. You can download it from [here](https://www.virtualbox.org/).
-2. **Set Up Ubuntu VM**: Set up an Ubuntu virtual machine within VirtualBox. Detailed instructions can be found [here](https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-windows#1-overview).
-3. **Install GNU Radio Companion**: Install GNU Radio Companion on your Ubuntu VM. Instructions are available [here](https://wiki.gnuradio.org/index.php/InstallingGR).
+1. **Install Oracle VM VirtualBox**: Ensure you have VirtualBox installed on your machine. You can download it from [![VirtualBox](https://img.shields.io/badge/Download-VirtualBox-yellow.svg)](https://www.virtualbox.org/).
+
+2. **Set Up Ubuntu VM**: Set up an Ubuntu virtual machine within VirtualBox. Detailed instructions can be found [![here](https://img.shields.io/badge/Instructions-Set%20Up%20Ubuntu%20VM-blue.svg)](https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-windows#1-overview).
+
+3. **Install GNU Radio Companion**: Install GNU Radio Companion on your Ubuntu VM. Instructions are available [![here](https://img.shields.io/badge/Instructions-Install%20GNU%20Radio%20Companion-blue.svg)](https://wiki.gnuradio.org/index.php/InstallingGR).
+
 4. **Clone this Repository**: Clone this repository into your Ubuntu VM using the following command:
    ```bash
    git clone https://github.com/prudvi1916/GNU_RADIO_UBUNTU.git
+
 
 
