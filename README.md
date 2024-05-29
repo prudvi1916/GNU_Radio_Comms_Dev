@@ -1,9 +1,10 @@
 # GNU_RADIO_UBUNTU
-[![View Count](https://views.whatilearened.today/views/github/yourusername/your-repo-name.svg)](https://github.com/yourusername/your-repo-name)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/your-repo-name.svg)](https://github.com/yourusername/your-repo-name/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/yourusername/your-repo-name.svg)](https://github.com/yourusername/your-repo-name/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/yourusername/your-repo-name.svg)](https://github.com/yourusername/your-repo-name/issues)
+[![View Count](https://views.whatilearened.today/views/github/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU)
+[![GitHub Stars](https://img.shields.io/github/stars/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU/issues)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://www.linkedin.com/in/prudvi-reddy-poli-3b2430237/)
 
 # Comprehensive Development of Communication Techniques with GNU Radio Companion
 
@@ -39,4 +40,5 @@ To get started with this project, please follow these steps:
 3. **Install GNU Radio Companion**: Install GNU Radio Companion on your Ubuntu VM. Instructions are available [here](https://wiki.gnuradio.org/index.php/InstallingGR).
 4. **Clone this Repository**: Clone this repository into your Ubuntu VM using the following command:
    ```bash
-  [ git clone https://github.com/yourusername/your-repo-name.git](https://github.com/prudvi1916/GNU_RADIO_UBUNTU.git)
+   git clone https://github.com/prudvi1916/GNU_RADIO_UBUNTU.git
+
