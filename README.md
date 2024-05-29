@@ -55,6 +55,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any inquiries or further information, please contact:
 
 - **Project Supervisor**: T. Nagarjuna, [email@example.com]
+- **NextGen Connectivity Lab**, GITAM University, Bangalore
 
 ## Acknowledgements
 
