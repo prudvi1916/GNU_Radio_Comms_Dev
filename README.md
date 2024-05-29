@@ -45,9 +45,6 @@ Navigate through the repository and explore the provided examples and scripts. U
 
 We welcome contributions to enhance this project's functionality and usability. Follow the guidelines in our [CONTRIBUTING.md](CONTRIBUTING.md) to contribute.
 
-![Contribute](https://example.com/contribute_image.jpg)
-
-
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
