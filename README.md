@@ -39,4 +39,4 @@ To get started with this project, please follow these steps:
 3. **Install GNU Radio Companion**: Install GNU Radio Companion on your Ubuntu VM. Instructions are available [here](https://wiki.gnuradio.org/index.php/InstallingGR).
 4. **Clone this Repository**: Clone this repository into your Ubuntu VM using the following command:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+  [ git clone https://github.com/yourusername/your-repo-name.git](https://github.com/prudvi1916/GNU_RADIO_UBUNTU.git)
