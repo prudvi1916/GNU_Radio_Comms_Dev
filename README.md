@@ -37,7 +37,7 @@ To get started with this project, please follow these steps:
 
 4. **Clone this Repository**: Clone this repository into your Ubuntu VM using the following command:
    ```bash
-   git clone https://github.com/prudvi1916/GNU_RADIO_UBUNTU.git
+   git clone https://github.com/prudvi1916/GNU_Radio_Comms_Dev.git
 ## Explore and Run
 Navigate through the repository and explore the provided examples and scripts. Use GNU Radio Companion to open and run the .grc files.
 
