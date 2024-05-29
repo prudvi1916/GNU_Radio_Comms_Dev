@@ -38,21 +38,26 @@ To get started with this project, please follow these steps:
 4. **Clone this Repository**: Clone this repository into your Ubuntu VM using the following command:
    ```bash
    git clone https://github.com/prudvi1916/GNU_RADIO_UBUNTU.git
-5.Explore and Run: Navigate through the repository and explore the provided examples and scripts. Use GNU Radio Companion to open and run the .grc files.
-Explore and Run
-Navigate through the repository and explore the provided examples and scripts. Use GNU Radio Companion to open and run the .grc files.
+## Explore and Run
 
-Contributing
-We welcome contributions to this project. If you have suggestions, bug reports, or feature requests, please create an issue or submit a pull request. Make sure to follow our contributing guidelines.
+Navigate through the repository and explore the provided examples and scripts. Use GNU Radio Companion to open and run the `.grc` files.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## Contributing
 
-Contact
+We welcome contributions to this project. If you have suggestions, bug reports, or feature requests, please create an issue or submit a pull request. Make sure to follow our [contributing guidelines](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
 For any inquiries or further information, please contact:
 
-Project Supervisor: T. Nagarjuna, [email@example.com]
-Acknowledgements
+- **Project Supervisor**: T. Nagarjuna, [email@example.com]
+
+## Acknowledgements
+
 We extend our gratitude to the NextGen Connectivity Lab at GITAM University for providing the resources and support necessary for this project.
 
 
