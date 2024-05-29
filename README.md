@@ -41,8 +41,11 @@ To get started with this project, please follow these steps:
 ## Explore and Run
 Navigate through the repository and explore the provided examples and scripts. Use GNU Radio Companion to open and run the .grc files.
 
-##Contributing Guidelines
-We welcome contributions to enhance this project's functionality and usability. Follow the guidelines in our CONTRIBUTING.md to contribute.
+## Contributing Guidelines
+
+We welcome contributions to enhance this project's functionality and usability. Follow the guidelines in our [CONTRIBUTING.md](CONTRIBUTING.md) to contribute.
+
+![Contribute](https://example.com/contribute_image.jpg)
 
 
 ## License
