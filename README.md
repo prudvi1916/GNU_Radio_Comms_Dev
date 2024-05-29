@@ -50,7 +50,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Contact
 For any inquiries or further information, please contact:
 
-- **Project Supervisor**: T. Nagarjuna, [LinkedIn](https://www.linkedin.com/in/prudvi-reddy-poli-3b2430237/)
+- **Project Supervisor**: T. Nagarjuna, [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://www.linkedin.com/in/dr-nagarjuna-telagam-8104b0188/)
 - **NextGen Connectivity Lab**, GITAM University, Bangalore
 
 ## Acknowledgements
