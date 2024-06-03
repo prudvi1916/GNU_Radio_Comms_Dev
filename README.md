@@ -22,12 +22,7 @@ This project is conducted under the guidance of **T. Nagarjuna** at the **NextGe
 
 ## Repository Contents
 
-This repository includes various scripts, configuration files, and documentation necessary for developing and simulating communication techniques. The primary focus areas include:
-
-- **Analog Communication**: Design and analysis of analog communication systems.
-- **Digital Communication**: Implementation and testing of digital communication protocols.
-- **Optical Communication**: Development and simulation of optical communication systems.
-- **4G Communication**: Development and simulation of 4G LTE techniques and protocols.
+Developed and tested a wide range of communication systems, including analog (AM, FM), digital (QPSK, BPSK), and other advanced communication techniques, using GNU Radio. Conducted simulations and real-time analyses to evaluate system performance, design signal processing workflows, and optimize parameters for enhanced reliability and efficiency.
 
 ## Getting Started
 
