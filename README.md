@@ -16,7 +16,7 @@ Welcome to the repository dedicated to the comprehensive development of various 
 ![gnu](https://github.com/prudvi1916/GNU_Radio_Comms_Dev/assets/133519386/2882ba1b-903e-4d32-ab7b-0f0adc2ff029)
 
 
-## Project Supervision
+## Project Supervision dbs
 
 This project is conducted under the guidance of **T. Nagarjuna** at the **NextGen Connectivity Lab**, **GITAM University**, Bangalore.
 
