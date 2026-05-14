@@ -1,4 +1,4 @@
-# GNU_RADIO_UBUNTU   gna
+# GNU_RADIO_UBUNTU   gna zgba
 [![View Count](https://views.whatilearened.today/views/github/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU)
 [![GitHub Stars](https://img.shields.io/github/stars/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/prudvi1916/GNU_RADIO_UBUNTU.svg)](https://github.com/prudvi1916/GNU_RADIO_UBUNTU/network/members)
